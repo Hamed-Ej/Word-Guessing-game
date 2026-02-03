@@ -24,14 +24,16 @@ while turn > 0:
         if i in guesses:
             print(i,end=" ")
         else:
-            print('_')
+            print('_',end=" ")
             failed +=1
 
     if failed == 0 :
+        print()
         print('You won!')
         print(f'The word is : {word}')
         break
-
+    
+    print()
     guess =input('guess a character: ')
     guesses += guess
 
